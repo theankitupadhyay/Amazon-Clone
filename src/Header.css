@@ -9,16 +9,26 @@
 }
 
 .header_logo {
-  width: 100px;
+  width: 110px;
   object-fit: contain;
   margin: 0 20px;
-  margin-top: 18px;
+  margin-top: 8px;
 }
+
+.hovb:hover {
+  color: lightgrey;
+}
+
 .header__search {
   display: flex;
   flex: 1;
   align-items: center;
-  border-radius: 24px;
+}
+
+.header__search:focus-within {
+  border: 3px solid #cd9042;
+  border-radius: 5px;
+  outline: none;
 }
 
 .header__searchInput {
@@ -26,11 +36,12 @@
   padding: 10px;
   border: none;
   width: 100%;
+  outline: none;
 }
 
 .header__searchIcon {
   padding: 5px;
-  height: 22px;
+  height: 22px !important;
   background-color: #cd9042;
 }
 

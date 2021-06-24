@@ -1,7 +1,6 @@
 .checkoutProduct {
   display: flex;
   margin: 20px 0;
-  border-bottom: 1px groove;
 }
 
 .checkoutProduct__info {
@@ -13,6 +12,10 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+}
+
+.checkoutProduct__info > button:hover {
+  background-color: #b8953c;
 }
 
 .checkoutProduct__image {
