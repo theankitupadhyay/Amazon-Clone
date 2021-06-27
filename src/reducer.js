@@ -1,5 +1,3 @@
-import { StateContext } from "./StateProvider";
-
 export const initialState = { basket: [], user: null };
 
 // Selector

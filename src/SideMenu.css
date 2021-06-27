@@ -1,0 +1,41 @@
+.sidemenu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidemenu__header {
+  background: #232f3e;
+  color: #fff;
+  font-size: 12px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.sidemenu__ListContainer {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sidemenu__ListContainer > h3 {
+  padding: 5px 40px;
+}
+
+.sidemenu__List {
+  list-style-type: none;
+}
+
+.sidemenu__ListItem {
+  padding: 10px 40px;
+}
+.sidemenu__ListItem > span {
+  transform: rotate(90);
+}
+
+.sidemenu__ListItem:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

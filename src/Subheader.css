@@ -1,0 +1,106 @@
+.subheader {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 35px;
+  background-color: #232f3e;
+  padding: 5px;
+  padding-right: 0;
+}
+
+.subheader__optionList {
+  list-style-type: none;
+}
+
+.subheader__option:hover {
+  box-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  cursor: pointer;
+}
+
+.subheader__optionList .toggler__button {
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: inherit;
+}
+
+.subheader__option {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 5px;
+  padding: 5px 5px;
+}
+
+.subheader__optionBanner {
+  margin-left: auto;
+}
+
+.sideMenu {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  max-height: 100vh;
+}
+
+.sideMenu__active {
+  display: block;
+}
+
+.sideMenu .sideMenu__button {
+  position: absolute;
+  z-index: 10000;
+  left: 360px;
+  top: 0;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 200;
+  background: transparent;
+  color: white;
+  animation: fade 1s ease;
+}
+
+.sideMenu .sideMenu__container {
+  display: none;
+  max-height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 360px;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.sideMenu__active .sideMenu__container {
+  display: block;
+  animation: slideRight 1s ease;
+  overflow: scroll;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-360px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

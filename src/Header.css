@@ -15,20 +15,19 @@
   margin-top: 8px;
 }
 
+.hovb {
+  padding: 10px 8px;
+}
+
 .hovb:hover {
-  color: lightgrey;
+  box-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
 }
 
 .header__search {
   display: flex;
   flex: 1;
   align-items: center;
-}
-
-.header__search:focus-within {
-  border: 3px solid #cd9042;
-  border-radius: 5px;
-  outline: none;
 }
 
 .header__searchInput {
@@ -43,6 +42,20 @@
   padding: 5px;
   height: 22px !important;
   background-color: #cd9042;
+}
+
+.header__searchOption {
+  background-color: #f1f1f1f1;
+  min-width: 40px;
+  height: 32px;
+  border: none;
+  outline: none;
+}
+
+.header__search:focus-within {
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #cd9042, 0px -5px 0px #cd9042, -5px 5px 0px #cd9042,
+    -5px -5px 0px #cd9042;
 }
 
 .header__nav {
@@ -71,6 +84,7 @@
   display: flex;
   align-items: center;
   color: white;
+  padding-top: 13px;
 }
 
 .header__basketCount {
