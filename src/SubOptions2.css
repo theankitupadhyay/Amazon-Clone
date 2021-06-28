@@ -1,0 +1,22 @@
+.subOptions2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+}
+
+.subOptions2__list {
+  list-style-type: none;
+}
+
+.subOptions2__listItems {
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 0.6em;
+}
+
+.subOptions2__listItems:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

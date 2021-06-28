@@ -1,0 +1,29 @@
+.footerEnd {
+  font-size: 12px;
+}
+
+.footerEnd > ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.footerEnd__listItem {
+  display: inline;
+  word-wrap: break-word;
+}
+
+.footerEnd__listItem .nav_a {
+  color: #ddd;
+  padding: 0 0.6em;
+  text-decoration: none;
+}
+
+.footerEnd__listItem .nav_a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footerEnd > span {
+  white-space: normal;
+  color: #fff;
+}
